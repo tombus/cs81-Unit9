@@ -1,0 +1,48 @@
+<!-- //cs81unit9part1 Tom Mulkern
+ --><!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>CS 81 Unit9 Part1</title>
+
+</head>
+<body>	
+<h1 id="change">Hello World!</h1>	
+
+
+
+
+<script type="text/javascript">
+
+var changeText = "Good Evening World!";
+
+document.getElementById("change").innerHTML = changeText;
+
+console.log(changeText);
+
+//given constructor
+function Employee(first, last, ssn, eid, dept) {
+   this.firstName = first;
+   this.lastName = last;
+   this.ssn = ssn;
+   this.eid = eid;
+   this.dept = dept;
+   }
+
+
+//change the ssn, dpt, and add a function to the employee prototype 
+Employee.prototype.ssn = "000-00-0000";
+Employee.prototype.dept = "empty";
+Employee.prototype.getInfo = function(){
+   return this.firstName + " " + this.lastName + " : " + this.dept;
+};   
+
+</script>
+</body>
+</html>
+
+
+
+
+

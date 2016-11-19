@@ -1,0 +1,36 @@
+<!-- //cs81unit9part2 Tom Mulkern
+ --><!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CS 81 Unit9 Part2</title>
+</head>
+<body>	
+   <!-- This approach feels really bloated, initially I wanted to see if i could set a function call from a style sheet like 'strong { onmouseover='function(this)' ..., only found jquery options after a brief search-->
+   <p><strong onmouseover="redText(this)" onmouseout="blackText(this)">We</strong> have just started <strong onmouseover="redText(this)" onmouseout="blackText(this)">this</strong> section for the users (<strong onmouseover="redText(this)" onmouseout="blackText(this)">beginner</strong> to intermediate) who want to work with <strong onmouseover="redText(this)" onmouseout="blackText(this)">various</strong> JavaScript <strong onmouseover="redText(this)" onmouseout="blackText(this)">problems</strong> and write scripts online to <strong onmouseover="redText(this)" onmouseout="blackText(this)">test</strong> their JavaScript <strong onmouseover="redText(this)" onmouseout="blackText(this)">skill</strong>.</p>
+
+
+<script type="text/javascript">
+
+function redText(x){
+
+   //changed text size a bit larger for better visibility
+
+   //	console.log("it happened");
+   x.style = ('color: red; font-size: 1.25em;');
+}
+
+function blackText(x){
+   //	console.log(x.innerHTML + " it also happened");
+   x.style = ('color: black; font-size: 1em;');
+}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
